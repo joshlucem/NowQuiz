@@ -1,0 +1,29 @@
+profiles:
+  default:
+    money: 60
+    xp: 6
+  easy:
+    money: 100
+    xp: 10
+    items:
+      - material: GOLD_NUGGET
+        amount: 6
+  medium:
+    money: 180
+    xp: 18
+    items:
+      - material: EMERALD
+        amount: 2
+      - material: IRON_INGOT
+        amount: 4
+  hard:
+    money: 325
+    xp: 32
+    items:
+      - material: DIAMOND
+        amount: 1
+      - material: EMERALD
+        amount: 4
+    commands:
+      console:
+        - "tell {player} Has completado una pregunta dificil de NowQuiz."

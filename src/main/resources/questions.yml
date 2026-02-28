@@ -1,0 +1,349 @@
+general:
+  - id: "hearts_01"
+    type: "MULTIPLE"
+    question: "Cuantos corazones tiene un jugador sin efectos?"
+    options:
+      A: "10"
+      B: "20"
+      C: "15"
+      D: "12"
+    correct: "A"
+    difficulty: "easy"
+    rewards:
+      money: 150
+      xp: 5
+  - id: "slots_01"
+    type: "MULTIPLE"
+    question: "Cuantos espacios tiene un cofre normal?"
+    options:
+      A: "18"
+      B: "27"
+      C: "36"
+      D: "54"
+    correct: "B"
+    difficulty: "easy"
+  - id: "daylight_01"
+    type: "TRUE_FALSE"
+    question: "Un dia completo de Minecraft dura 20 minutos reales."
+    options:
+      A: "Verdadero"
+      B: "Falso"
+    correct: "A"
+    difficulty: "default"
+  - id: "beds_01"
+    type: "TRUE_FALSE"
+    question: "Se puede dormir en el Nether sin consecuencias."
+    options:
+      A: "Verdadero"
+      B: "Falso"
+    correct: "B"
+    difficulty: "easy"
+  - id: "ore_01"
+    type: "OPEN"
+    question: "Que material se necesita para fabricar una lodestone?"
+    correct: "lingote de netherita"
+    aliases:
+      - "netherita"
+      - "un lingote de netherita"
+      - "netherite ingot"
+    difficulty: "medium"
+    rewards:
+      money: 220
+      xp: 20
+  - id: "map_01"
+    type: "MULTIPLE"
+    question: "Que objeto necesitas para clonar un mapa vacio?"
+    options:
+      A: "Papel"
+      B: "Brujula"
+      C: "Mesa de cartografia"
+      D: "Pluma"
+    correct: "A"
+    difficulty: "medium"
+
+survival:
+  - id: "hunger_01"
+    type: "MULTIPLE"
+    question: "Que barra debes llenar para poder esprintar sin parar?"
+    options:
+      A: "Armadura"
+      B: "Hambre"
+      C: "Experiencia"
+      D: "Burbuja de aire"
+    correct: "B"
+    difficulty: "easy"
+  - id: "shield_01"
+    type: "MULTIPLE"
+    question: "Con que material se fabrica un escudo?"
+    options:
+      A: "Hierro y palos"
+      B: "Madera y lingote de hierro"
+      C: "Cuero y madera"
+      D: "Piedra y madera"
+    correct: "B"
+    difficulty: "easy"
+  - id: "totem_01"
+    type: "MULTIPLE"
+    question: "Que criatura suelta el Totem of Undying?"
+    options:
+      A: "Evoker"
+      B: "Vindicator"
+      C: "Illusioner"
+      D: "Witch"
+    correct: "A"
+    difficulty: "medium"
+    rewards:
+      xp: 24
+      items:
+        - material: EMERALD
+          amount: 3
+  - id: "elytra_01"
+    type: "OPEN"
+    question: "En que estructura del End se encuentra normalmente la elytra?"
+    correct: "end ship"
+    aliases:
+      - "barco del end"
+      - "nave del end"
+      - "ship del end"
+    difficulty: "medium"
+    rewards:
+      money: 240
+      xp: 26
+  - id: "water_01"
+    type: "TRUE_FALSE"
+    question: "Un cubo de agua puede salvarte de dano por caida si lo colocas a tiempo."
+    options:
+      A: "Verdadero"
+      B: "Falso"
+    correct: "A"
+    difficulty: "easy"
+  - id: "phantom_01"
+    type: "TRUE_FALSE"
+    question: "Los phantoms aparecen si pasas varias noches sin dormir."
+    options:
+      A: "Verdadero"
+      B: "Falso"
+    correct: "A"
+    difficulty: "easy"
+
+mineria:
+  - id: "diamond_01"
+    type: "MULTIPLE"
+    question: "Que pico se necesita para minar obsidiana?"
+    options:
+      A: "Madera"
+      B: "Piedra"
+      C: "Hierro"
+      D: "Diamante o netherita"
+    correct: "D"
+    difficulty: "easy"
+  - id: "redstone_01"
+    type: "MULTIPLE"
+    question: "Que mena suelta polvo de redstone?"
+    options:
+      A: "Lapis"
+      B: "Redstone"
+      C: "Cobre"
+      D: "Carbon"
+    correct: "B"
+    difficulty: "easy"
+  - id: "lapis_01"
+    type: "TRUE_FALSE"
+    question: "El lapis lazuli sirve para encantar."
+    options:
+      A: "Verdadero"
+      B: "Falso"
+    correct: "A"
+    difficulty: "easy"
+  - id: "ancient_01"
+    type: "OPEN"
+    question: "Como se llama el bloque que se funde para obtener restos usados en netherita?"
+    correct: "ancient debris"
+    aliases:
+      - "escombros ancestrales"
+      - "debris ancestrales"
+    difficulty: "hard"
+    rewards:
+      money: 450
+      xp: 40
+      items:
+        - material: ANCIENT_DEBRIS
+          amount: 1
+  - id: "copper_01"
+    type: "MULTIPLE"
+    question: "Que bloque de cobre cambia de color con el tiempo?"
+    options:
+      A: "Bloque de cobre"
+      B: "Bloque de oro"
+      C: "Bloque de hierro"
+      D: "Lapis lazuli"
+    correct: "A"
+    difficulty: "easy"
+  - id: "fortune_01"
+    type: "TRUE_FALSE"
+    question: "Fortuna aumenta la cantidad de diamantes que puede soltar una mena."
+    options:
+      A: "Verdadero"
+      B: "Falso"
+    correct: "A"
+    difficulty: "medium"
+
+redstone:
+  - id: "lever_01"
+    type: "MULTIPLE"
+    question: "Cual de estos bloques puede dar una senal de redstone manual?"
+    options:
+      A: "Palanca"
+      B: "Cristal"
+      C: "Esponja"
+      D: "Terracota"
+    correct: "A"
+    difficulty: "easy"
+  - id: "repeater_01"
+    type: "MULTIPLE"
+    question: "Para que se usa principalmente un repetidor?"
+    options:
+      A: "Para almacenar agua"
+      B: "Para extender o retrasar una senal"
+      C: "Para encantar objetos"
+      D: "Para duplicar items"
+    correct: "B"
+    difficulty: "medium"
+  - id: "comparator_01"
+    type: "TRUE_FALSE"
+    question: "Un comparador puede leer contenedores como cofres y tolvas."
+    options:
+      A: "Verdadero"
+      B: "Falso"
+    correct: "A"
+    difficulty: "medium"
+    rewards:
+      items:
+        - material: REDSTONE
+          amount: 8
+  - id: "observer_01"
+    type: "OPEN"
+    question: "Que bloque detecta cambios en el bloque que tiene delante?"
+    correct: "observer"
+    aliases:
+      - "observador"
+      - "bloque observador"
+    difficulty: "medium"
+  - id: "hopper_01"
+    type: "MULTIPLE"
+    question: "Que bloque mueve objetos automaticamente entre contenedores?"
+    options:
+      A: "Dispensador"
+      B: "Tolva"
+      C: "Piston"
+      D: "Atril"
+    correct: "B"
+    difficulty: "easy"
+
+nether_end:
+  - id: "boss_01"
+    type: "MULTIPLE"
+    question: "Que jefe deja caer la Nether Star?"
+    options:
+      A: "Ender Dragon"
+      B: "Warden"
+      C: "Wither"
+      D: "Elder Guardian"
+    correct: "C"
+    difficulty: "medium"
+    rewards:
+      xp: 26
+      items:
+        - material: EMERALD
+          amount: 4
+  - id: "blaze_01"
+    type: "MULTIPLE"
+    question: "Que mob deja caer blaze rods?"
+    options:
+      A: "Piglin"
+      B: "Blaze"
+      C: "Ghast"
+      D: "Magma Cube"
+    correct: "B"
+    difficulty: "easy"
+  - id: "pearls_01"
+    type: "MULTIPLE"
+    question: "Que objeto necesitas junto con blaze powder para crear un ojo de ender?"
+    options:
+      A: "Perla de ender"
+      B: "Lagrima de ghast"
+      C: "Obsidiana"
+      D: "Membrana de phantom"
+    correct: "A"
+    difficulty: "easy"
+  - id: "respawn_01"
+    type: "TRUE_FALSE"
+    question: "Un respawn anchor funciona en el Nether."
+    options:
+      A: "Verdadero"
+      B: "Falso"
+    correct: "A"
+    difficulty: "medium"
+  - id: "dragon_01"
+    type: "OPEN"
+    question: "Como se llama el jefe principal del End?"
+    correct: "ender dragon"
+    aliases:
+      - "dragon del end"
+      - "dragon ender"
+    difficulty: "medium"
+    rewards:
+      money: 260
+      xp: 28
+
+crafteo:
+  - id: "anvil_01"
+    type: "MULTIPLE"
+    question: "Cuantos bloques de hierro se usan para fabricar un yunque?"
+    options:
+      A: "2"
+      B: "3"
+      C: "4"
+      D: "5"
+    correct: "B"
+    difficulty: "medium"
+    rewards:
+      items:
+        - material: IRON_INGOT
+          amount: 8
+  - id: "bookshelf_01"
+    type: "MULTIPLE"
+    question: "Que objeto se necesita junto con libros para fabricar una libreria?"
+    options:
+      A: "Palos"
+      B: "Tablones"
+      C: "Papel"
+      D: "Hilo"
+    correct: "B"
+    difficulty: "easy"
+  - id: "cake_01"
+    type: "TRUE_FALSE"
+    question: "La tarta se fabrica con leche, huevo, azucar y trigo."
+    options:
+      A: "Verdadero"
+      B: "Falso"
+    correct: "A"
+    difficulty: "medium"
+  - id: "compass_01"
+    type: "OPEN"
+    question: "Que mineral va en el centro para fabricar una brujula?"
+    correct: "redstone"
+    aliases:
+      - "polvo de redstone"
+      - "redstone dust"
+    difficulty: "easy"
+  - id: "lantern_01"
+    type: "MULTIPLE"
+    question: "Que material acompana a las pepitas de hierro para fabricar una linterna?"
+    options:
+      A: "Antorcha"
+      B: "Carbon"
+      C: "Palo"
+      D: "Cristal"
+    correct: "A"
+    difficulty: "easy"

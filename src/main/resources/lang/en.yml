@@ -1,0 +1,63 @@
+prefix: "<gradient:#19a7ce:#146c94><bold>NowQuiz</bold></gradient> <gray>|</gray>"
+
+system:
+  reloaded: "<prefix> <green>Configuration reloaded successfully.</green>"
+  disabled: "<prefix> <red>The quiz system is currently disabled.</red>"
+  no-questions: "<prefix> <red>No questions are available for that selection.</red>"
+  database-error: "<prefix> <red>Statistics are temporarily unavailable.</red>"
+
+errors:
+  no-permission: "<prefix> <red>You do not have permission to do that.</red>"
+  player-only: "<prefix> <red>This action can only be used by a player.</red>"
+  invalid-round: "<prefix> <red>That round is no longer active.</red>"
+  invalid-option: "<prefix> <red>That answer is not valid for this round.</red>"
+  round-running: "<prefix> <yellow>A round is already active.</yellow>"
+  no-active-round: "<prefix> <yellow>There is no active round.</yellow>"
+  already-answered: "<prefix> <yellow>You have already answered in this round.</yellow>"
+  cooldown: "<prefix> <yellow>Please wait <time>ms before trying again.</yellow>"
+  too-fast: "<prefix> <yellow>That answer was ignored because it was unrealistically quick.</yellow>"
+  ineligible: "<prefix> <yellow>You must stay online longer before you can win rewards.</yellow>"
+  usage: "<prefix> <yellow>Usage: <usage></yellow>"
+  player-not-found: "<prefix> <red>That player could not be found.</red>"
+
+question:
+  header: "<prefix> <gold><bold>Trivia</bold></gold> <gray>#<round_id></gray>"
+  prompt: "<gray>Question:</gray> <white><question></white>"
+  footer: "<gray>Time limit:</gray> <yellow><seconds>s</yellow>"
+  no-click-open: "<gray>Use <yellow>/nowquiz answer <round_id> <your answer></yellow> or <yellow><chat_prefix><your answer></yellow>.</gray>"
+
+options:
+  layout: "LIST"
+  list-format: "<gray>[<option>]</gray> <white><text></white>"
+  inline-format: "<gray>[<option>]</gray> <white><text></white>"
+  inline-separator: " <dark_gray>|</dark_gray> "
+  hover: "<green>Click to answer</green>"
+
+feedback:
+  correct: "<prefix> <green>Answer recorded: <correct>.</green>"
+  incorrect: "<prefix> <red>Answer recorded: <answer>.</red>"
+  accepted-open: "<prefix> <green>Your open answer was submitted.</green>"
+
+rewards:
+  money: "<prefix> <green>You received <amount> coins.</green>"
+  xp: "<prefix> <green>You received <amount> experience points.</green>"
+  item: "<prefix> <green>You received <amount>x <item>.</green>"
+  commands: "<prefix> <green><amount> additional reward actions were applied.</green>"
+
+round:
+  manual-start: "<prefix> <green>The round was started manually.</green>"
+  stopped: "<prefix> <yellow>The active round was stopped.</yellow>"
+  winner-single: "<prefix> <green><player> won the round in <time>ms.</green>"
+  winner-multi: "<prefix> <green>Correct answers from: <players>.</green>"
+  no-winner: "<prefix> <yellow>No one answered correctly this round.</yellow>"
+  correct-answer: "<prefix> <gray>Correct answer:</gray> <white><answer></white>"
+
+stats:
+  header: "<prefix> <gold>Statistics for <player></gold>"
+  line: "<gray>Plays:</gray> <white><plays></white> <dark_gray>|</dark_gray> <gray>Wins:</gray> <white><wins></white> <dark_gray>|</dark_gray> <gray>Losses:</gray> <white><losses></white>"
+  streak: "<gray>Best streak:</gray> <white><best_streak></white> <dark_gray>|</dark_gray> <gray>Current streak:</gray> <white><current_streak></white>"
+  average: "<gray>Average response time:</gray> <white><avg_ms>ms</white>"
+
+top:
+  header: "<prefix> <gold>Top players by <metric></gold>"
+  entry: "<gray>#<position></gray> <white><player></white> <dark_gray>-</dark_gray> <yellow><value></yellow>"

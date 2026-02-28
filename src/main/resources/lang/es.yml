@@ -1,0 +1,63 @@
+prefix: "<gradient:#19a7ce:#146c94><bold>NowQuiz</bold></gradient> <gray>|</gray>"
+
+system:
+  reloaded: "<prefix> <green>Configuracion recargada correctamente.</green>"
+  disabled: "<prefix> <red>El sistema de trivias esta desactivado.</red>"
+  no-questions: "<prefix> <red>No hay preguntas disponibles para esa seleccion.</red>"
+  database-error: "<prefix> <red>Las estadisticas no estan disponibles temporalmente.</red>"
+
+errors:
+  no-permission: "<prefix> <red>No tienes permiso para hacer eso.</red>"
+  player-only: "<prefix> <red>Esta accion solo puede usarla un jugador.</red>"
+  invalid-round: "<prefix> <red>Esa ronda ya no esta activa.</red>"
+  invalid-option: "<prefix> <red>Esa respuesta no es valida para esta ronda.</red>"
+  round-running: "<prefix> <yellow>Ya hay una ronda activa.</yellow>"
+  no-active-round: "<prefix> <yellow>No hay ninguna ronda activa.</yellow>"
+  already-answered: "<prefix> <yellow>Ya respondiste en esta ronda.</yellow>"
+  cooldown: "<prefix> <yellow>Espera <time>ms antes de volver a intentarlo.</yellow>"
+  too-fast: "<prefix> <yellow>Esa respuesta fue ignorada por ser demasiado rapida.</yellow>"
+  ineligible: "<prefix> <yellow>Debes llevar mas tiempo conectado para poder ganar recompensas.</yellow>"
+  usage: "<prefix> <yellow>Uso: <usage></yellow>"
+  player-not-found: "<prefix> <red>No se encontro a ese jugador.</red>"
+
+question:
+  header: "<prefix> <gold><bold>Trivia</bold></gold> <gray>#<round_id></gray>"
+  prompt: "<gray>Pregunta:</gray> <white><question></white>"
+  footer: "<gray>Tiempo limite:</gray> <yellow><seconds>s</yellow>"
+  no-click-open: "<gray>Usa <yellow>/nowquiz answer <round_id> <tu respuesta></yellow> o <yellow><chat_prefix><tu respuesta></yellow>.</gray>"
+
+options:
+  layout: "LIST"
+  list-format: "<gray>[<option>]</gray> <white><text></white>"
+  inline-format: "<gray>[<option>]</gray> <white><text></white>"
+  inline-separator: " <dark_gray>|</dark_gray> "
+  hover: "<green>Haz clic para responder</green>"
+
+feedback:
+  correct: "<prefix> <green>Respuesta registrada: <correct>.</green>"
+  incorrect: "<prefix> <red>Respuesta registrada: <answer>.</red>"
+  accepted-open: "<prefix> <green>Tu respuesta abierta fue enviada.</green>"
+
+rewards:
+  money: "<prefix> <green>Has recibido <amount> monedas.</green>"
+  xp: "<prefix> <green>Has recibido <amount> puntos de experiencia.</green>"
+  item: "<prefix> <green>Has recibido <amount>x <item>.</green>"
+  commands: "<prefix> <green>Se ejecutaron <amount> acciones de recompensa.</green>"
+
+round:
+  manual-start: "<prefix> <green>La ronda se inicio manualmente.</green>"
+  stopped: "<prefix> <yellow>La ronda activa fue detenida.</yellow>"
+  winner-single: "<prefix> <green><player> gano la ronda en <time>ms.</green>"
+  winner-multi: "<prefix> <green>Respondieron correctamente: <players>.</green>"
+  no-winner: "<prefix> <yellow>Nadie respondio correctamente esta ronda.</yellow>"
+  correct-answer: "<prefix> <gray>Respuesta correcta:</gray> <white><answer></white>"
+
+stats:
+  header: "<prefix> <gold>Estadisticas de <player></gold>"
+  line: "<gray>Participaciones:</gray> <white><plays></white> <dark_gray>|</dark_gray> <gray>Aciertos:</gray> <white><wins></white> <dark_gray>|</dark_gray> <gray>Fallos:</gray> <white><losses></white>"
+  streak: "<gray>Mejor racha:</gray> <white><best_streak></white> <dark_gray>|</dark_gray> <gray>Racha actual:</gray> <white><current_streak></white>"
+  average: "<gray>Tiempo medio de respuesta:</gray> <white><avg_ms>ms</white>"
+
+top:
+  header: "<prefix> <gold>Top de jugadores por <metric></gold>"
+  entry: "<gray>#<position></gray> <white><player></white> <dark_gray>-</dark_gray> <yellow><value></yellow>"

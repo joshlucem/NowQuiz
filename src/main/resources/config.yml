@@ -1,0 +1,35 @@
+lang: es
+
+enabled: true
+
+auto:
+  enabled: true
+  interval-seconds: 300
+
+round:
+  time-limit-seconds: 30
+  allow-multiple-winners: false
+
+answer:
+  allow-click: true
+  allow-chat: true
+  chat-prefix: "-"
+  cooldown-ms: 750
+  min-human-ms: 250
+
+question:
+  avoid-repeats: true
+  repeat-cooldown: 5
+
+hooks:
+  vault: true
+
+eligibility:
+  min-online-seconds: 0
+
+debug: false
+
+broadcast:
+  scope: GLOBAL
+  permission: nowquiz.use
+  default-world: ""

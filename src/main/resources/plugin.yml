@@ -1,0 +1,41 @@
+name: NowQuiz
+version: ${project.version}
+main: dev.joshlucem.nowquiz.core.NowQuizPlugin
+api-version: "1.20"
+author: JoshLucem
+website: https://github.com/joshlucem
+description: Automatic trivia rounds with clickable Adventure chat answers.
+commands:
+  nowquiz:
+    description: Main command for NowQuiz.
+    usage: /nowquiz <start|stop|ask|reload|answer|stats|top>
+    aliases: [nquiz]
+permissions:
+  nowquiz.admin:
+    description: Grants full administrative access to NowQuiz.
+    default: op
+    children:
+      nowquiz.start: true
+      nowquiz.stop: true
+      nowquiz.reload: true
+      nowquiz.stats: true
+      nowquiz.top: true
+      nowquiz.use: true
+  nowquiz.use:
+    description: Allows a player to participate in quiz rounds.
+    default: true
+  nowquiz.start:
+    description: Allows manually starting a quiz round.
+    default: op
+  nowquiz.stop:
+    description: Allows stopping the active quiz round.
+    default: op
+  nowquiz.reload:
+    description: Allows reloading the plugin configuration.
+    default: op
+  nowquiz.stats:
+    description: Allows viewing quiz statistics.
+    default: true
+  nowquiz.top:
+    description: Allows viewing quiz leaderboards.
+    default: true
